@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
   <head>
-    <script type="text/javascript" src="lib/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="lib/sammy-0.7.1.min.js"></script>
+    <script type="text/javascript" src="http://code.angularjs.org/angular-1.0.0rc8.min.js"></script>
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="gen/default.css">
     <script type="text/javascript" src="gen/start.js"></script>
     <title>Slavery (cotton-edition)</title>
   </head>
   <body>
-    <div id="content">W00T!</div>
+    <div ng-controller="StatusController">
+      <h2>{{Date()}}</h2>
+    </div>
   </body>
 </html>
