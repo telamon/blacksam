@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html ng-app>
+<html xmlns:ng="http://angularjs.org/" ng-app>
   <head>
+    <meta charset="utf-8"/>
     <script type="text/javascript" src="http://code.angularjs.org/angular-1.0.0rc8.min.js"></script>
     <link rel="stylesheet" href="style/bootstrap.css">
     <link rel="stylesheet" href="gen/default.css">
     <script type="text/javascript" src="gen/start.js"></script>
-    
     <title>Slavery (cotton-edition)</title>
   </head>
   <body>
     <div ng-controller="window.StatusController">
       <h2>{{today()}}</h2>
+      <p>Today {{today}}</p>
+      <p>This week: {{week}}</p>
+      <p>This month: {{month}}</p>
+      <p>Flex balance: {{flex}}</p>
     </div>
   </body>
 </html>
